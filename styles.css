@@ -1,0 +1,291 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    background-image: url('chessBack.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   
+    
+}
+
+header{
+    border-radius: 100px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 70px;
+}
+
+/* Navigation Bar */
+.navbar {
+    
+    
+    border-radius: 100px;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1; 
+}
+
+.navbar #cavallo2 img {
+    height: 50px;
+    float: right;
+    
+
+}
+
+.navbar #cavallo1 img {
+    height: 50px;
+    float: left;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration:none;
+    padding: 20px 20px;
+    display: block;
+    border-radius: 30px;
+}
+
+.navbar ul li a:hover {
+    background-color: #6f6545;
+    transition: background-color 0.3s ease;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transition: .3 ease;
+}
+.navbar #cavallo1:hover {
+    background-color: #6f6545;
+    transition: background-color 0.3s ease;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transition: .3 ease;
+    border-radius: 10px;
+}
+
+.navbar #cavallo2:hover {
+    background-color: #6f6545;
+    transition: background-color 0.3s ease;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transition: .3 ease;
+    border-radius: 10px;
+}
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 100px;
+    background-color: rgb(255, 246, 203);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
+    
+    
+    
+}
+
+/* Gallery */
+.gallery img{
+    border-radius: 30px;
+    margin: 5px;
+    padding: 10px;
+    margin-left: 40px;
+    height: 300px;
+    
+}
+    
+    
+
+.gallery img:hover{
+   
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    
+}
+
+#home p{
+    font-size: 30px;
+    text-align:center;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: rgb(227, 188, 32);
+    border-radius: 30px;
+    padding: 20px;
+    font-style: oblique;
+}
+
+/* Links */
+#siti ul {
+    list-style: none;
+    padding-left: 130px;
+    font-size: 50px;
+    
+}
+#chess img {
+    float: right;
+    height: 250px;
+    margin-top: 20px;
+    margin-right:50px;
+    border-radius: 40px;
+    
+}
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.storia pre {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.storia p {
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 130px;
+}
+.storia .pics img{
+    height: 350px;
+    margin-left: 130px;
+    border-radius: 30px;
+}
+
+.storia #classifica img {
+    margin-left: 350px;
+    border-radius: 20px;
+}
+
+/* Stile responsivo */
+@media (max-width: 1200px) {
+    body {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    h1, h2 {
+        font-size: 50px;
+    }
+
+    #home p {
+        font-size: 25px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .gallery img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    h1, h2 {
+        font-size: 40px;
+    }
+
+    #home p {
+        font-size: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .gallery img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1, h2 {
+        font-size: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .gallery img {
+        height: 150px;
+    }
+
+    #home p {
+        font-size: 18px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #chess img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 576px) {
+    h1, h2 {
+        font-size: 25px;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+    }
+
+    #home p {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    .gallery img {
+        height: 100px;
+    }
+
+    .storia .pics img, .storia #classifica img {
+        margin-left: 0;
+        display: block;
+        margin: 10px auto;
+    }
+}
