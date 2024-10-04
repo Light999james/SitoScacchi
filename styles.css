@@ -35,7 +35,7 @@ h1, h2 {
 
 .navbar #cavallo2 img {
     height: 50px;
-    float: right;
+    
     
 
 }
@@ -165,16 +165,14 @@ ul li a {
     text-decoration: none;
 }
 
-.storia pre {
-    color: #ffffff;
-    font-size: 20px;
-}
 
-.storia p {
+
+.storia p, .storia h1, .storia h2, .storia h3, .storia ul {
     color: #ffffff;
     font-size: 20px;
     padding-left: 130px;
 }
+
 .storia .pics img{
     height: 350px;
     margin-left: 130px;
@@ -272,7 +270,18 @@ ul li a {
     .navbar ul li a {
         padding: 10px;
     }
+    
+    
 
+    .navbar ul li a {
+        color: white;
+        text-decoration:none;
+        padding: 20px 20px;
+        border-radius: 30px;
+    }
+    .navbar ul {
+        align-items: center;
+    }
     #home p {
         margin-left: 20px;
         margin-right: 20px;
@@ -280,12 +289,56 @@ ul li a {
     }
 
     .gallery img {
-        height: 100px;
+        height: 150px;
+        padding: 0px;
+        margin: 5px;
+        align-items: center;
+        display:inline-block
+        
+        
+    }
+    .storia p, .storia h1, .storia h2, .storia h3, .storia ul {
+        color: #ffffff;
+        font-size: 20px;
+        padding-left: 0px;
+        margin-left: 10px;
+       
+    }
+    
+    .storia .pics img{
+        height: 250px;
+        width: 350px;
+        margin-left: 130px;
+        border-radius: 30px;
     }
 
-    .storia .pics img, .storia #classifica img {
+    .storia .pics img{
         margin-left: 0;
         display: block;
         margin: 10px auto;
+    }
+
+    #siti ul  {
+        margin-left: 10px;
+        padding-left: 0px;
+        font-size: 10ppx;
+        
+    }
+    #siti ul li a  {
+        color: rgb(248, 187, 65);
+        
+    }
+    #chess img{
+        height: 200px;
+    }
+    .storia #classifica img {
+        margin-left: 0px;
+        height: 370px;
+        margin-bottom: 40px;
+        border-radius: 20px;
+
+    }
+    .storia a{
+        color:rgb(248, 187, 65); ;
     }
 }
